@@ -1,0 +1,92 @@
+style.css
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e3f2fd; /* Bleu clair */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* rend l'image ronde */
+    width: 150px; /* largeur de l'image */
+    height: 150px; /* hauteur de l'image */
+    object-fit: cover; /* adapte l'image sans déformation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ajoute une ombre douce */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #003c8f; /* Bleu marine */
+}
+
+a:hover {
+    color: #005cbf; /* Bleu océan */
+}
+
+h1, h2, h3 {
+    color: #003c8f; /* Couleur des titres */
+}
+
+/* Requêtes Médias pour la réactivité */
+
+/* Pour les écrans de moins de 960px */
+@media (max-width: 960px) {
+    section {
+        max-width: 700px; /* Réduire la largeur */
+    }
+}
+
+/* Pour les écrans de moins de 720px */
+@media (max-width: 720px) {
+    section {
+        max-width: 500px; /* Réduire davantage la largeur */
+    }
+}
+
+/* Pour les écrans de moins de 540px */
+@media (max-width: 540px) {
+    section {
+        max-width: 300px; /* Réduction encore plus importante */
+        padding: 5px; /* Réduction de l'espace intérieur pour plus de confort visuel */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em; /* Ajustement de la taille des titres */
+    }
+
+    p {
+        font-size: 0.9em; /* Ajustement de la taille du texte */
+    }
+}
